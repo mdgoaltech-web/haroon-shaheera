@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haroon &amp; Shaheera Wedding</title>
+<meta name="description" content="You are invited to the wedding celebration of Haroon Khurshid with Shaheera Chaudhry. January 2027, Vehari.">
+<meta name="theme-color" content="#FBF7EF">
+<meta name="color-scheme" content="light">
+
+<!-- Link preview (WhatsApp, iMessage, Facebook). -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Haroon Khurshid with Shaheera Chaudhry">
+<meta property="og:description" content="Wedding Invitation · January 2027 · Vehari">
+<meta property="og:url" content="https://mdgoaltech-web.github.io/haroon-shaheera/">
+<meta property="og:image" content="https://mdgoaltech-web.github.io/haroon-shaheera/assets/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A garden arch of lilac and blush flowers around the names Haroon Khurshid with Shaheera Chaudhry">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--APP-->
+<header class="opening" id="top">
+  <div class="stage" id="stage">
+    <img class="arch" src="assets/arch.svg" alt="" width="800" height="1200" decoding="async">
+    <div class="fireflies" id="fireflies" aria-hidden="true"></div>
+    <div class="stage-inner">
+      <p class="eyebrow">Wedding Invitation</p>
+      <div class="centerpiece">
+        <div class="envelope" aria-hidden="true">
+          <div class="env-back"></div>
+          <div class="env-letter"><span class="env-letter-mark" data-fill="seal"></span></div>
+          <svg class="env-pocket" viewBox="0 0 300 200" preserveAspectRatio="none">
+            <polygon points="0,0 152,104 0,200" fill="#F6EFE0"/>
+            <polygon points="300,0 148,104 300,200" fill="#F4ECDB"/>
+            <polygon points="0,200 150,92 300,200" fill="#FAF4E8"/>
+            <polyline points="0,200 150,92 300,200" fill="none" stroke="#E5D3A8" stroke-width="1" vector-effect="non-scaling-stroke"/>
+            <rect x=".5" y=".5" width="299" height="199" fill="none" stroke="#E5D3A8" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <svg class="env-flap" viewBox="0 0 300 116" preserveAspectRatio="none">
+            <polygon points="0,0 300,0 150,114" fill="#FBF6EC" stroke="#E5D3A8" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <div class="env-seal"><span data-fill="seal"></span></div>
+        </div>
+        <h1 class="names" id="names" aria-live="polite"></h1>
+      </div>
+      <div class="opening-actions">
+        <button class="btn btn-primary" id="openBtn" type="button">Open Invitation</button>
+        <a class="text-link" id="detailsLink" href="#events">View Wedding Details</a>
+      </div>
+    </div>
+  </div>
+  <noscript><p class="noscript">Please turn on JavaScript to open this invitation.</p></noscript>
+</header>
+
+<nav class="quicknav" id="quicknav" aria-label="Sections" hidden>
+  <div class="quicknav-inner">
+    <a class="quicknav-mark" href="#top" data-fill="seal" aria-label="Back to the top"></a>
+    <div class="quicknav-links">
+      <a href="#events">Events</a>
+      <a href="#location">Location</a>
+      <a href="#rsvp" data-if="rsvp">RSVP</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main" hidden>
+  <div id="review"></div>
+  <section class="section wrap" id="invitation" aria-label="The invitation"></section>
+  <section class="section wrap" id="events" aria-labelledby="events-h"></section>
+  <section class="section wrap" id="location" aria-labelledby="location-h"></section>
+  <section class="section wrap" id="rsvp" aria-labelledby="rsvp-h"></section>
+  <section class="section wrap" id="card" aria-labelledby="card-h"></section>
+  <footer class="footer" id="share">
+    <div class="wrap footer-inner">
+      <img class="sprig" src="assets/sprig.svg" alt="" width="260" height="44" loading="lazy">
+      <h2 class="footer-title">Share the Invitation</h2>
+      <div class="actions actions-center">
+        <button class="btn btn-primary" type="button" data-act="share"><span data-icon="share"></span>Share Invitation</button>
+        <button class="btn" type="button" data-act="copy-link"><span data-icon="link"></span>Copy Link</button>
+      </div>
+      <p class="footer-names" id="footerNames"></p>
+    </div>
+    <img class="meadow" src="assets/meadow.svg" alt="" width="800" height="230" loading="lazy">
+  </footer>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Printed card" hidden>
+  <div class="lb-bar">
+    <p class="lb-caption" id="lbCaption"></p>
+    <div class="lb-tools">
+      <button type="button" class="lb-btn" data-lb="out" aria-label="Zoom out"><span data-icon="minus"></span></button>
+      <button type="button" class="lb-btn" data-lb="in" aria-label="Zoom in"><span data-icon="plus"></span></button>
+      <button type="button" class="lb-btn" data-lb="close" aria-label="Close"><span data-icon="close"></span></button>
+    </div>
+  </div>
+  <div class="lb-scroll" id="lbScroll"><img id="lbImg" alt=""></div>
+  <div class="lb-nav">
+    <button type="button" class="lb-btn" data-lb="prev" aria-label="Previous page"><span data-icon="prev"></span></button>
+    <span class="lb-count" id="lbCount"></span>
+    <button type="button" class="lb-btn" data-lb="next" aria-label="Next page"><span data-icon="next"></span></button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!--/APP-->
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
