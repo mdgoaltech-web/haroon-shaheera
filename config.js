@@ -48,6 +48,13 @@ window.WEDDING = {
       mapsUrl: "https://maps.app.goo.gl/ochdmv3rLsVMNgPc8", // pin supplied and confirmed by the family
       pinVerified: true,
     },
+    house: {
+      name: "House 160, New Danewal Town",
+      address: "Near city cold store, Vehari",
+      mapsQuery: "",
+      mapsUrl: "https://maps.app.goo.gl/3t19Yj3wcNnVYVfq9", // pin supplied by the family
+      pinVerified: true,
+    },
     shafaq: {
       name: "Shafaq Lucky Marquee",
       address: "Burewala Road, Vehari",
@@ -66,6 +73,30 @@ window.WEDDING = {
    *            No end time is added.
    */
   events: [
+    {
+      id: "rasm-e-hina",
+      name: "Rasm e Hina",
+      intro: "Laiba & Amna cordially invite you to the Rasm e Hina of their beloved brother.",
+      day: "Thursday",
+      date: "2027-01-07",
+      programme: [
+        { label: "Mehndi", time: "06:00 pm" },
+        { label: "Sehra Bandi", time: "09:00 pm" },
+      ],
+      venue: "nawab",
+    },
+    {
+      id: "barat",
+      name: "Barat",
+      intro: "We warmly invite you to share in the joy and blessings of our beloved son's Barat.",
+      day: "Friday",
+      date: "2027-01-08",
+      programme: [
+        { label: "Gathering", time: "07:00 am" },
+        { label: "Departure", time: "07:30 am" },
+      ],
+      venue: "house",
+    },
     {
       id: "bazm-e-sama",
       name: "Bazm-e-Sama",
@@ -113,6 +144,8 @@ window.WEDDING = {
   // Scans of the printed card, shown under "The Printed Card".
   cardPages: [
     { src: "assets/card/01-invitation.jpg", caption: "Invitation", w: 879, h: 1141 },
+    { src: "assets/card/02-rasm-e-hina.jpg", caption: "Rasm e Hina", w: 1008, h: 988 },
+    { src: "assets/card/03-barat.jpg", caption: "Barat", w: 873, h: 847 },
     { src: "assets/card/04-bazm-e-sama.jpg", caption: "Bazm-e-Sama", w: 669, h: 653 },
     { src: "assets/card/05-walima.jpg", caption: "Dawat-e-Walima", w: 877, h: 1138 },
   ],
